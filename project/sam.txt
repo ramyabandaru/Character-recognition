@@ -1,0 +1,12 @@
+compare
+{
+read 1
+for
+{
+l1:
+{
+c++;
+read2
+compare{
+if not equal break l1}
+}

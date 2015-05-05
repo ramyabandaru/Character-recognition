@@ -1,0 +1,9 @@
+The ColorModel abstract class encapsulates the methods for translating a pixel value to color components (for example, red, green, and blue) and an alpha component. In order to render an image to the screen, a printer, or another image, pixel values must be converted to color and alpha components. As arguments to or return values from methods of this class, pixels are represented as 32-bit ints or as arrays of primitive types. The number, order, and interpretation of color components for a ColorModel is specified by its ColorSpace. A ColorModel used with pixel data that does not include alpha information treats all pixels as opaque, which is an alpha value of 1.0. 
+
+
+
+
+
+
+
+A Raster defines values for pixels occupying a particular rectangular area of the plane, not necessarily including (0, 0). The rectangle, known as the Raster's bounding rectangle and available by means of the getBounds method, is defined by minX, minY, width, and height values. The minX and minY values define the coordinate of the upper left corner of the Raster. References to pixels outside of the bounding rectangle may result in an exception being thrown, or may result in references to unintended elements of the Raster's associated DataBuffer. It is the user's responsibility to avoid accessing such pixels. 
